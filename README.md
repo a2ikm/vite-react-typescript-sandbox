@@ -48,3 +48,17 @@ export default tseslint.config({
   },
 })
 ```
+
+# How to build
+
+For development, run the following command to build and start server:
+
+```
+$ npm run dev
+```
+
+For production, run the following command to build:
+
+```
+$ npm run build
+```
