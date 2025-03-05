@@ -8,13 +8,17 @@ function App() {
 		setBpm(parseInt(e.target.value));
 	}
 
+	const calcMilliseconds = (bpm: number): number => {
+		return Math.floor(60 * 1000 / bpm);
+	}
+
 	return (
 		<>
 			<div>
 				BPM: <input type="number" onChange={handleChanged} />
 			</div>
 			<div>
-				raw value: {bpm}
+				Milliseconds: {calcMilliseconds(bpm)}
 			</div>
 		</>
 	);
